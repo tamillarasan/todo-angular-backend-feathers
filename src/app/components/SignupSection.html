@@ -1,0 +1,34 @@
+<section class="main">
+  <form ng-submit="$ctrl.submitRegistration($ctrl.form)" role="form">
+    <div class="form-group">
+      <label>Email</label>
+      <input 
+        type="email" 
+        name="email" 
+        ng-model="$ctrl.form.email" 
+        required="required" class="textInput"/>
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input 
+        type="password" 
+        name="password" 
+        ng-model="$ctrl.form.password" 
+        required="required" 
+        class="textInput"/>
+    </div>
+
+    <div class="form-group">
+      <label>Password confirmation</label>
+      <input 
+        type="password" 
+        name="password_confirmation" 
+        ng-model="$ctrl.form.password_confirmation" 
+        required="required" 
+        class="form-control"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg">Register</button>
+  </form>
+</section>
